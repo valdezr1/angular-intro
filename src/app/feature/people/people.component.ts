@@ -12,6 +12,7 @@ export class PeopleComponent implements OnInit {
   //Properties
   people : PersonComponent[];
   showExtended: boolean; // Todo: Toggle with button
+  disabledBtn : boolean = true; // Property Bound Button bound with "disabled" attribute
 
   constructor() { }
 
