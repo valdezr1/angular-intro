@@ -32,6 +32,11 @@ export class UserComponent {
     firstName : string = "Raf";
     lastName : string = "Valdez";
     age: number = 10; 
+    address = {
+        street: "Candy Cane Lane",
+        city: "Denver",
+        state: "Colorado"
+    };
 
     // Methods
     constructor(){
@@ -59,6 +64,10 @@ export class UserComponent {
     // component's lifecycle
     hasBirthday(): void {
         this.age++;
+    }
+
+    stringInterpolationMethodReturn() : string {
+        return "This method returned a string!";
     }
 
 }

@@ -1,2 +1,16 @@
 <h2>User Component</h2>
 <p class="awesomeColor">I'm an Awesome Color!</p>
+<!--
+    Anything that can be ultimately evaluated into a string, can be outputted 
+    appropriately as long as it has the double curly braces "{{ myStr }}" syntax.
+    Even includes arithmetic. Basically allows variables to be within our HTML.
+-->
+<p>{{'String Interpolation!'}}</p>
+<p>1 + 1 = {{1 + 1}}</p>
+<p>{{firstName}} {{lastName}}</p> 
+
+<ul>
+    <li>Age: {{age}}</li>
+    <li>Address: {{address.street}} {{address.city}}, {{address.state}}</li>
+    <li>stringInterpolationMethodReturn() called and returned using string interpolation: {{stringInterpolationMethodReturn()}}</li>
+</ul>
