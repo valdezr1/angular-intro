@@ -13,6 +13,7 @@
     </ul>
   </li>
 </ul>
-<button [disabled]="disabledBtn">Property Binding Button</button>
+<button [disabled]="disabledBtn">Property Binding Button 1</button>
+<button bind-disabled="disabledBtn">Property Binding Button 2</button>
 
 <h4 *ngIf="people.length == 0"> No Users Found</h4>
