@@ -1,0 +1,10 @@
+<h1>People</h1>
+<hr/>
+<ul>
+  <li *ngFor= "let p of people">
+    <h3>{{p.firstName}} {{p.lastName}}</h3>
+    <ul>
+        <li>Age: {{p.age}}</li>
+    </ul>
+  </li>
+</ul>

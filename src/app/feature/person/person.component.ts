@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core'
+import {Component} from '@angular/core'
 
 @Component({
     selector: 'app-person',
@@ -10,14 +10,14 @@ import {Component, OnInit} from '@angular/core'
 // "Component" from @angular/core. In addtion, to implement, create
 // a method called ngOnInit() which is a lifecycle method that is 
 // ran before the component mounts but after the constructor is ran.\
-export class PersonComponent implements OnInit {
+export class PersonComponent{
+
+    // Properties
+    firstName : string;
+    lastName : string;
+    age : number;
 
     constructor(){
         console.log("PersonComponent Rendering");
     }
-
-    ngOnInit() {
-        console.log("PersonComponent ngOnInit method running")
-    }
-
 }
