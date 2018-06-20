@@ -1,10 +1,17 @@
 <h1>People</h1>
 <hr/>
 <ul>
+  <!--
+    Structural directive is the '*' and must be used when
+    dealing with ngFor, ngIf, etc. Anything that has 
+    structural control of the output
+  -->
   <li *ngFor= "let p of people">
     <h3>{{p.firstName}} {{p.lastName}}</h3>
-    <ul>
+    <ul *ngIf="showExtended"> 
         <li>Age: {{p.age}}</li>
     </ul>
   </li>
 </ul>
+
+<h4 *ngIf="people.length == 0"> No Users Found</h4>

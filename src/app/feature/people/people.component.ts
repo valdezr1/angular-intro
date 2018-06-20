@@ -11,11 +11,12 @@ export class PeopleComponent implements OnInit {
 
   //Properties
   people : PersonComponent[];
+  showExtended: boolean; // Todo: Toggle with button
 
   constructor() { }
 
   ngOnInit() {
-  
+    this.showExtended = true;
     this.people = [
       {
         firstName : "jank",
@@ -33,6 +34,12 @@ export class PeopleComponent implements OnInit {
         age: 22
       }
     ];
+
+  }
+
+  // Todo: Going to implement a button to invoke this, and forms to add a person
+  addPerson(person : PersonComponent){
+    this.people.unshift(person);
   }
 
 }
